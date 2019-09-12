@@ -1,130 +1,132 @@
 <html>
   <head>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea</title>
-<meta name="description" content="温故而知新" />
-<link rel="shortcut icon" href="https://github.com/kkxiaoa/favicon.ico?v=1568277014576">
+    
+<meta charset="utf-8" >
+
+<title>芥末无疆</title>
+<meta name="description" content="不解释，只解决">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://github.com/kkxiaoa/favicon.ico?v=1568290053296">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://github.com/kkxiaoa/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://github.com/kkxiaoa">
-  <img class="avatar" src="https://github.com/kkxiaoa/images/avatar.png?v=1568277014576" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签滚滚滚
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://github.com/kkxiaoa">
+        <img class="avatar" src="https://github.com/kkxiaoa/images/avatar.png?v=1568290053296" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://github.com/kkxiaoa">
+        <h1 class="site-title">芥末无疆</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            Home
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about/" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
-        <div class="tags-container">
+
+        <div class="content-container">
           
-            <a class="tag" href="https://github.com/kkxiaoa/tag/ZwyBkMBlY">Gridea</a>
-          
+          <div class="tags-container">
+            
+              <a class="tag" href="https://github.com/kkxiaoa/tag/gyJmRlQ1_">node</a>
+            
+              <a class="tag" href="https://github.com/kkxiaoa/tag/ZwyBkMBlY">Gridea</a>
+            
+          </div>
+
         </div>
 
         <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://github.com/kkxiaoa/atom.xml" target="_blank">RSS</a>
+  <div class="slogan">不解释，只解决</div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/kkxiaoa" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/kkxiaoa" target="_blank">芥末无疆</a> | <a class="rss" href="https://github.com/kkxiaoa/atom.xml" target="_blank">RSS</a>
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      </div>
+      <script type="application/javascript">
 
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
+hljs.initHighlightingOnLoad()
 
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
+
+
+
     </div>
   </body>
 </html>
