@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com/kkxiaoa/blog</id>
+    <id>https://github.com/kkxiaoablog/tree/master</id>
     <title>芥末无疆</title>
-    <updated>2019-09-13T16:23:14.593Z</updated>
+    <updated>2019-09-13T16:33:33.003Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com/kkxiaoa/blog"/>
-    <link rel="self" href="https://github.com/kkxiaoa/blog/atom.xml"/>
+    <link rel="alternate" href="https://github.com/kkxiaoablog/tree/master"/>
+    <link rel="self" href="https://github.com/kkxiaoablog/tree/master/atom.xml"/>
     <subtitle>不解释，只解决</subtitle>
-    <logo>https://github.com/kkxiaoa/blog/images/avatar.png</logo>
-    <icon>https://github.com/kkxiaoa/blog/favicon.ico</icon>
+    <logo>https://github.com/kkxiaoablog/tree/master/images/avatar.png</logo>
+    <icon>https://github.com/kkxiaoablog/tree/master/favicon.ico</icon>
     <rights>All rights reserved 2019, 芥末无疆</rights>
     <entry>
         <title type="html"><![CDATA[新的起点]]></title>
-        <id>https://github.com/kkxiaoa/blog/post/xin-de-qi-dian</id>
-        <link href="https://github.com/kkxiaoa/blog/post/xin-de-qi-dian">
+        <id>https://github.com/kkxiaoablog/tree/master/post/xin-de-qi-dian</id>
+        <link href="https://github.com/kkxiaoablog/tree/master/post/xin-de-qi-dian">
         </link>
         <updated>2019-09-12T11:59:02.000Z</updated>
         <summary type="html"><![CDATA[<p>今天，新的一天<img src="https://github.com/kkxiaoa/post-images/1568289573589.jpg" alt=""></p>
@@ -23,8 +23,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
-        <id>https://github.com/kkxiaoa/blog/post/about</id>
-        <link href="https://github.com/kkxiaoa/blog/post/about">
+        <id>https://github.com/kkxiaoablog/tree/master/post/about</id>
+        <link href="https://github.com/kkxiaoablog/tree/master/post/about">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
         <summary type="html"><![CDATA[<p>这是关于的页面，可以在这里向世界介绍你！</p>
@@ -34,8 +34,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://github.com/kkxiaoa/blog/post/hello-gridea</id>
-        <link href="https://github.com/kkxiaoa/blog/post/hello-gridea">
+        <id>https://github.com/kkxiaoablog/tree/master/post/hello-gridea</id>
+        <link href="https://github.com/kkxiaoablog/tree/master/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
