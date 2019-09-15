@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>/blog</id>
-    <title>芥末无疆</title>
-    <updated>2019-09-13T17:29:22.699Z</updated>
+    <title>前端技术分享</title>
+    <updated>2019-09-15T10:15:37.552Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="/blog"/>
     <link rel="self" href="/blog/atom.xml"/>
-    <subtitle>不解释，只解决</subtitle>
+    <subtitle>热爱前端，拥抱开源，最重要的是不止前端</subtitle>
     <logo>/blog/images/avatar.png</logo>
     <icon>/blog/favicon.ico</icon>
-    <rights>All rights reserved 2019, 芥末无疆</rights>
+    <rights>All rights reserved 2019, 前端技术分享</rights>
+    <entry>
+        <title type="html"><![CDATA[vuepress]]></title>
+        <id>/blog/post/di-san-fang-de</id>
+        <link href="/blog/post/di-san-fang-de">
+        </link>
+        <updated>2019-09-15T07:22:05.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新的起点]]></title>
         <id>/blog/post/xin-de-qi-dian</id>
