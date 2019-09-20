@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id></id>
+    <id>https://kkxiaoa.github.io/blog</id>
     <title>前端技术分享</title>
-    <updated>2019-09-18T11:31:12.259Z</updated>
+    <updated>2019-09-20T14:46:27.109Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="self" href="/atom.xml"/>
+    <link rel="alternate" href="https://kkxiaoa.github.io/blog"/>
+    <link rel="self" href="https://kkxiaoa.github.io/blog/atom.xml"/>
     <subtitle>热爱前端，拥抱开源，最重要的是不止前端</subtitle>
-    <logo>/images/avatar.png</logo>
-    <icon>/favicon.ico</icon>
+    <logo>https://kkxiaoa.github.io/blog/images/avatar.png</logo>
+    <icon>https://kkxiaoa.github.io/blog/favicon.ico</icon>
     <rights>All rights reserved 2019, 前端技术分享</rights>
     <entry>
         <title type="html"><![CDATA[vuepress]]></title>
-        <id>/post/di-san-fang-de</id>
-        <link href="/post/di-san-fang-de">
+        <id>https://kkxiaoa.github.io/blog/post/di-san-fang-de</id>
+        <link href="https://kkxiaoa.github.io/blog/post/di-san-fang-de">
         </link>
         <updated>2019-09-15T07:22:05.000Z</updated>
+        <summary type="html"><![CDATA[<hr>
+<p>date: 2019-5-6<br>
+tag:</p>
+<ul>
+<li>theme</li>
+<li>blog</li>
+<li>vuepress<br>
+author: ULIVZ<br>
+location: Shanghai</li>
+</ul>
+<hr>
+]]></summary>
+        <content type="html"><![CDATA[<hr>
+<p>date: 2019-5-6<br>
+tag:</p>
+<ul>
+<li>theme</li>
+<li>blog</li>
+<li>vuepress<br>
+author: ULIVZ<br>
+location: Shanghai</li>
+</ul>
+<hr>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[新的起点]]></title>
-        <id>/post/xin-de-qi-dian</id>
-        <link href="/post/xin-de-qi-dian">
+        <id>https://kkxiaoa.github.io/blog/post/xin-de-qi-dian</id>
+        <link href="https://kkxiaoa.github.io/blog/post/xin-de-qi-dian">
         </link>
         <updated>2019-09-12T11:59:02.000Z</updated>
         <summary type="html"><![CDATA[<p>今天，新的一天<img src="https://github.com/kkxiaoa/post-images/1568289573589.jpg" alt=""></p>
@@ -29,8 +54,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
-        <id>/post/about</id>
-        <link href="/post/about">
+        <id>https://kkxiaoa.github.io/blog/post/about</id>
+        <link href="https://kkxiaoa.github.io/blog/post/about">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
         <summary type="html"><![CDATA[<p>这是关于的页面，可以在这里向世界介绍你！</p>
@@ -40,8 +65,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>/post/hello-gridea</id>
-        <link href="/post/hello-gridea">
+        <id>https://kkxiaoa.github.io/blog/post/hello-gridea</id>
+        <link href="https://kkxiaoa.github.io/blog/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
