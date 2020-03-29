@@ -13,7 +13,8 @@ cd docs/.vuepress/dist
 # echo 'www.example.com' > CNAME
 # read -p "请输入commit信息: " msg
 
-git add -A && git commit -m 'deploy' && git push
+git add -A
+git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
