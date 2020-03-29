@@ -153,6 +153,3 @@ export function getPrinterByName(name) {
 - 了解`Electron`关于弹框、打印、保护、打包等功能的基本使用
 
 文中如有错误，欢迎在评论区指正，如果这篇文章帮助到了你，欢迎点赞和关注。
- 
- <comment/> 
- 
