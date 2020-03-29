@@ -354,3 +354,6 @@ if (process.platform === 'win32') {
 > CommandOrControl代表在macOS上为Command键，以及在Linux和Windows上为Control键。
 
 文中如有错误，欢迎在评论区指正，如果这篇文章帮助到了你，欢迎点赞和关注。
+ 
+ <comment/> 
+ 

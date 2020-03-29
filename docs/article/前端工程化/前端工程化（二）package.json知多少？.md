@@ -443,3 +443,6 @@ import * as ReactDOM from 'react-dom';
 ## 参考
 
 http://caibaojian.com/npm/files/package.json.html
+ 
+ <comment/> 
+ 

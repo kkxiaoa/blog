@@ -7,11 +7,17 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "node addMarkdown.js && vuepress build docs && node delMarkdown.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "js进阶",
+    "vue进阶",
+    "设计模式"
+  ],
+  "author": "javascirpts@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "gitalk": "^1.6.2"
+  }
 }

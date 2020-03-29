@@ -11,9 +11,9 @@ cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
-read -p "请输入commit信息: " msg
+# read -p "请输入commit信息: " msg
 
-git init && git add -A && git commit -m '$msg' && git push
+git add -A && git commit -m 'deploy' && git push
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master

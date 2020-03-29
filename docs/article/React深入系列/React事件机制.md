@@ -242,3 +242,6 @@ string type
 ## 推荐阅读
 
 【React深入】setState的执行机制
+ 
+ <comment/> 
+ 

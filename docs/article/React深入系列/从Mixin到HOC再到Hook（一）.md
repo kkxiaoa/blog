@@ -124,3 +124,7 @@ var Goods = React.createClass({
 
 文中如有错误，欢迎在评论区指正，谢谢阅读。
 
+
+ 
+ <comment/> 
+ 

@@ -259,3 +259,6 @@ Object.assign(
 ### 6.推荐使用方式
 
 在调用`setState`时使用函数传递`state`值，在回调函数中获取最新更新后的`state`。
+ 
+ <comment/> 
+ 
