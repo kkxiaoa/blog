@@ -29,9 +29,9 @@ export default {
     //   gitalk.render('gitalk-container');
     // };
     const gitalk = new Gitalk({
-      clientID: '5fd383acb0ffd7ba0c83',
-      clientSecret: '54631ac3c8c1a662bc4610ab3aec9608dd33c55b',
-      repo: 'vuepress-start',
+      clientID: 'a8986a4402ee81be23c6',
+      clientSecret: 'c550c309f874a5d7d4ab2f5d67dd7e596dcf295f',
+      repo: 'blog',
       owner: 'kkxiaoa',
       admin: ['kkxiaoa'],
       id: decodeURI(location.pathname).slice(-50),      // Ensure uniqueness and length less than 50
