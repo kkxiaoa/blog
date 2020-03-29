@@ -1,6 +1,6 @@
 module.exports = {
     title: 'kkxiao的blog',
-    description: '系统性学习，打造完善的知识体系',
+    description: '前端知识积累',
     base: '/blog/',
     themeConfig: {
         sidebarDepth: 2,
