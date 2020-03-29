@@ -1,7 +1,7 @@
 module.exports = {
     title: 'kkxiao的blog',
     description: '热爱前端，拥抱开源，不止前端',
-    base: '/blog/',
+    // base: '/',
     themeConfig: {
         sidebarDepth: 2,
         lastUpdated: 'Last Updated',
