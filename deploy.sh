@@ -13,6 +13,7 @@ cd docs/.vuepress/dist
 # echo 'www.example.com' > CNAME
 # read -p "请输入commit信息: " msg
 
+git init
 git add -A
 git commit -m 'deploy'
 
