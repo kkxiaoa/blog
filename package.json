@@ -19,5 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "gitalk": "^1.6.2"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.0",
+    "vuepress": "^1.4.0"
   }
 }

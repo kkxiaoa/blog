@@ -5,7 +5,7 @@ actionText: 开始阅读 →
 actionLink: /article/
 features:
 - title: JS进阶
-  details: 掌握高级JavaScript技巧。
+  details: 掌握JavaScrip进阶技能：this、原型链等。
 - title: Vue深入浅出
   details: 从实际问题出发，由源码深入Vue。
 - title: 设计模式
