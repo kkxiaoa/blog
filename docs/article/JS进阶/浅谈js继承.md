@@ -1,5 +1,5 @@
 ---
-title: 浅谈js类继承
+title: 类继承
 date: 2020-03-23 21:46:11
 tags:
      - JavaScript基础
@@ -55,7 +55,7 @@ animal1.category();   // ['二哈', '英短', '龙猫'];
 3. 这个新对象会绑定到函数调用的`this`，也就是说此时的`this`指的是 `animal`。
 4. 如果函数未返回其它对象，那么使用 `new` 关键字调用函数后会返回这个新对象（也就是 `animal{}`）。
 
-关于`this` 更细致的讨论可以参看TODO
+关于`this` 更细致的讨论可以参见[js之this](./浅谈js之this.html)
 
 所以当我们执行 `animal1.category()` 操作的时候，因为 `[[Get]]` 操作的默认行为会检查原型链，`animal1`自身没有 `categories` 属性所以会到自身原型链查找，由于`new Animal()`操作返回的对象与`Animal.prototype` 自动关联并且`animal.prototype` 还保存着 `Animal.prototype` 引用，因此`animal1` 便可以顺利的访问到`Animal` 原型链及自身的属性。
 
@@ -158,11 +158,7 @@ dog.yell();    // 二哈： 汪汪。。
 需要注意一点：经过 `inheritObject` 后已经没有 `Dog.prototype.constructor` 属性了，因为`Dog.prototype` 指向的是 `Animal.prototype` ，所以如果还需要这个属性，需要手动修复它：
 
 ```javascript
-function inheritPrototype(subClass, superClass) {
-    var f = inheritObject(superClass.prototype);
-    f.constructor = subClass;
-    subClass.prototype = f;
-}
+Dog.prototype.constructor = Dog
 ```
 
 ##  寄生组合式继承
@@ -170,6 +166,12 @@ function inheritPrototype(subClass, superClass) {
 因此便出现了更加理想的继承方式：
 
 ```javascript
+function inheritPrototype(subClass, superClass) {
+    var f = inheritObject(superClass.prototype);
+    f.constructor = subClass;
+    subClass.prototype = f;
+}
+
 function Animal(name) {
     this.name = name;
 }
@@ -208,4 +210,42 @@ dog.yell();    // 二哈饿了： 汪汪。。
 > 此外，`Obeject.create` 会创建一个拥有空原型连的对象，这个对象没有原型链，无法进行进行委托。这种特殊的空对象特别适合做为`字典`结构来存储数据。因此，该对象无法使用 `instanceof` 关键字，并且在使用`for..in`遍历对象的时候，使用 `Object.prototype.hasOwnProperty.call` 来避免类型错误。
 
 ##  多继承
+
+对于多继承来讲，我们可以换个思路。我们刚刚将到，单一方式最完善的继承是寄生组合式，其实多继承完全可以照这个思路将多个类的公有属性通过 `call` 或着 `apply` 的重新绑定功能将属性拷贝到自身，而对于原型链上的属性，则可以使用原型继承（需要将其它类的原型进行`混入`）。
+
+```javascript
+function SuperClass() {
+    this.name = "SuperClass"
+}
+
+SuperClass.prototype.superMethod = function () {
+	// ..
+}
+
+function OtherSuperClass() {
+    this.otherName = "OtherSuperClass"
+}
+
+OtherSuperClass.prototype.otherSuperMethod = function () {
+	// ..
+}
+
+function MyClass() {
+    SuperClass.call(this);
+    OtherSuperClass.call(this);
+}
+
+// 混入原型对象
+
+Object.setPrototypeOf(SuperClass.prototype, OtherSuperClass.prototype)
+Object.setPrototypeOf(MyClass.prototype, SuperClass.prototype)
+
+MyClass.prototype.myMethod = function() {
+    console.log('myMethod')
+};
+
+var myClass = new MyClass();
+
+console.log(myClass);  // MyClass {name: "SuperClass", otherName: "OtherSuperClass"}
+```
 
